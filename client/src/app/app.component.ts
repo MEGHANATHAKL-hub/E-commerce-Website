@@ -8,7 +8,7 @@ import { AuthService } from './shared/services/auth.service';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-  title = 'Demand ML';
+  title = 'Myntra';
   isLoggedIn: boolean = false;
   constructor(
     private readonly authService: AuthService,

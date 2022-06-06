@@ -11,6 +11,7 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatTableModule } from '@angular/material/table';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatDialogModule } from '@angular/material/dialog';
@@ -41,6 +42,7 @@ import { CoreModule } from './shared/core.module';
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
+    MatToolbarModule,
     //Angular Material Components
     MatButtonModule,
     MatIconModule,

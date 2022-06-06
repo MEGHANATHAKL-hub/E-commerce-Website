@@ -1,13 +1,43 @@
-<div class="app-header" fxLayout="row" fxLayoutAlign="start center">
-  <!-- <img src="assets/images/lixil.png" width="130" height="40" alt="logo" routerLink="/"> -->
-  <h1>Demand ML</h1>
-  <!-- <button mat-stroked-button color="primary" (click)="saveData()">Save</button> -->
-  <div style="flex: 1;"></div>
-  <!-- <button mat-stroked-button color="primary" routerLink="export">Export</button>
-  <button mat-icon-button aria-label="User Roles" routerLink="user-management">
-    <mat-icon>account_circle</mat-icon>
-  </button> -->
-  <button  mat-icon-button aria-label="Logout">
-    <mat-icon>logout</mat-icon>
-  </button>
-</div>
+<mat-toolbar>
+  <img class="sprites-headerLogo" src="../../../assets/images/myntra2.png" alt="myntra logo">
+
+  <div class="desktop-main" style="display: flex; flex-direction: row; margin-left: 50px;">
+    <div (mouseover)="mouseHover();">
+      <a>
+        <span>MEN</span>
+      </a>
+    </div>
+    <div><a><span>WEMEN</span></a></div>
+    <div><a><span>KIDS</span></a></div>
+    <div><a><span>HOME & LIVING</span></a></div>
+    <div><a><span>BEAUTY</span></a></div>
+    <div><a><span>STUDIO</span></a></div>
+
+    <div class="desktop-query">
+      <input class="inpt" placeholder="Search for products, brands and more">
+      <a>
+        <mat-icon class="desktop-submit">search</mat-icon>
+      </a>
+    </div>
+  </div>
+
+  <span class="example-spacer"></span>
+
+  <div class="desktop-actions">
+    <div>
+      <mat-icon class="desktop-iconUser">perm_identity</mat-icon>
+      <span class="desktop-userTitle">Profile</span>
+    </div>
+
+    <div>
+      <mat-icon class="desktop-iconUser">favorite_border</mat-icon>
+      <span class="desktop-userTitle">Wishlist</span>
+    </div>
+
+    <div>
+      <mat-icon class="desktop-iconUser" style="background-color: white;">shopping_bag</mat-icon>
+      <span class="desktop-userTitle">Bag</span>
+    </div>
+  </div>
+
+</mat-toolbar>
